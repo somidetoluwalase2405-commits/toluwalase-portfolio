@@ -36,3 +36,140 @@ a{
 ul{
     list-style:none;
 }
+/* ===================================
+   HEADER
+=================================== */
+
+header{
+    background:linear-gradient(135deg,#0078D4,#00A4EF);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+header p{
+    font-size:1.3rem;
+    font-weight:300;
+}/* ===================================
+   NAVIGATION
+=================================== */
+
+nav{
+    background:#111827;
+    padding:18px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}/* ===================================
+   SECTIONS
+=================================== */
+
+section{
+    max-width:1000px;
+    margin:50px auto;
+    padding:40px;
+    background:#1e293b;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+section h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+section p{
+    margin-bottom:20px;
+}/* ===================================
+   SECTIONS
+=================================== */
+
+section{
+    max-width:1000px;
+    margin:50px auto;
+    padding:40px;
+    background:#1e293b;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+section h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+section p{
+    margin-bottom:20px;
+}/* ===================================
+   SECTIONS
+=================================== */
+
+section{
+    max-width:1000px;
+    margin:50px auto;
+    padding:40px;
+    background:#1e293b;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+section h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+section p{
+    margin-bottom:20px;
+}/* ===================================
+   SECTIONS
+=================================== */
+
+section{
+    max-width:1000px;
+    margin:50px auto;
+    padding:40px;
+    background:#1e293b;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+section h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+section p{
+    margin-bottom:20px;
+}/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
