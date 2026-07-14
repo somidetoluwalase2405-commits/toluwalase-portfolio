@@ -1,149 +1,283 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somide Toluwalase | Cloud Engineer</title> 
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somide Toluwalase | Azure Cloud Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0; padding:0; box-sizing:border-box;}
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#0a192f;
+      color:#ccd6f6;
+    }
+    
+    /* NAV */
+    nav{
+      background:#0a192f;
+      padding:20px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:100;
+      border-bottom:1px solid #112240;
+    }
+    .logo{font-size:24px; font-weight:700; color:#64ffda;}
+    nav ul{display:flex; list-style:none; gap:30px;}
+    nav a{color:#ccd6f6; text-decoration:none; font-weight:500; transition:0.3s;}
+    nav a:hover{color:#64ffda;}
+    
+    /* HERO */
+    .hero{
+      background:linear-gradient(135deg, #0a192f 0%, #112240 100%);
+      text-align:center;
+      padding:120px 20px;
+    }
+    .hero h1{font-size:52px; color:#fff; margin-bottom:10px;}
+    .hero h2{font-size:24px; color:#64ffda; margin-bottom:20px; font-weight:400;}
+    .hero p{max-width:600px; margin:0 auto 30px; color:#8892b0;}
+    .btn{
+      background:#64ffda;
+      color:#0a192f;
+      padding:14px 30px;
+      border-radius:5px;
+      text-decoration:none;
+      font-weight:700;
+      transition:0.3s;
+    }
+    .btn:hover{background:#52e0c4;}
+    
+    /* SECTIONS */
+    .container{max-width:1100px; margin:0 auto; padding:80px 20px;}
+    section h2{
+      font-size:32px; 
+      color:#64ffda; 
+      text-align:center; 
+      margin-bottom:50px;
+    }
+    
+    /* CARDS */
+    .grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px;}
+    .card{
+      background:#112240;
+      padding:25px;
+      border-radius:10px;
+      border:1px solid #233554;
+      transition:0.3s;
+    }
+    .card:hover{transform:translateY(-5px); border-color:#64ffda;}
+    .card h3{color:#64ffda; margin-bottom:10px;}
+    
+    /* CONTACT */
+    .contact-box{text-align:center;}
+    .contact-box a{color:#64ffda; text-decoration:none; font-size:18px;}
+    .contact-box a:hover{text-decoration:underline;}
+    
+    footer{text-align:center; padding:40px; color:#8892b0; border-top:1px solid #112240;}
+  </style>
 </head>
 <body>
-<body>
+  <nav>
+    <div class="logo">Somide</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">Somide</div>
+  <section class="hero">
+    <h1>Somide Toluwalase</h1>
+    <h2>Junior Cloud Engineer | Azure Enthusiast</h2>
+    <p>Building scalable, secure cloud solutions with Microsoft Azure, Windows Server, and Linux</p>
+    <a href="#contact" class="btn">Get In Touch</a>
+  </section>
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <header>
-
-        <h1>Somide Toluwalase</h1>
-
-        <p>Junior Cloud Engineer | Azure Enthusiast</p>
-
-    </header>
-
-    <!-- About -->
+  <div class="container">
     <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            Hi, I'm Somide Toluwalase, a Junior Cloud Engineer with a strong interest in Microsoft Azure, Windows Server, Linux, and IT infrastructure. I enjoy building practical cloud projects and continuously improving my skills through hands-on learning. My goal is to build secure, reliable, and scalable cloud solutions while growing my career in cloud engineering.
-        </p>
-
+      <h2>About Me</h2>
+      <p style="text-align:center; max-width:700px; margin:0 auto; line-height:1.8;">
+        Hi, I'm Somide Toluwalase, a Junior Cloud Engineer with a strong interest in Microsoft Azure, Windows Server, Linux, and IT infrastructure. 
+        I enjoy working on cloud projects and continuously improving my skills through hands-on learning.
+      </p>
     </section>
 
-    <!-- Skills -->
     <section id="skills">
-
-        <h2>Technical Skills</h2>
-
-        <ul>
-            <li>Microsoft Azure</li>
-            <li>Azure CLI</li>
-            <li>Windows Server</li>
-            <li>Active Directory Domain Services (AD DS)</li>
-            <li>Linux (Ubuntu)</li>
-            <li>Git & GitHub</li>
-            <li>Networking Fundamentals</li>
-            <li>Nginx Web Server</li>
-        </ul>
-
+      <h2>Technical Skills</h2>
+      <div class="grid">
+        <div class="card"><h3>Microsoft Azure</h3><p>VMs, Storage, Networking, AD</p></div>
+        <div class="card"><h3>Windows Server</h3><p>Active Directory, DNS, DHCP</p></div>
+        <div class="card"><h3>Linux</h3><p>Ubuntu, Bash, Nginx, Apache</p></div>
+        <div class="card"><h3>DevOps Tools</h3><p>Git, GitHub, Docker, Azure CLI</p></div>
+      </div>
     </section>
 
-    <!-- Projects -->
     <section id="projects">
-
-        <h2>Projects</h2>
-
-        <h3>Azure Windows Virtual Machine</h3>
-        <p>Created and managed a Windows virtual machine in Microsoft Azure and configured Remote Desktop access.</p>
-
-        <h3>Active Directory Domain Services</h3>
-        <p>Installed and configured Active Directory Domain Services, created users, groups, and organizational units.</p>
-
-        <h3>Linux Web Server</h3>
-        <p>Deployed an Ubuntu virtual machine, installed Nginx, and hosted a web server.</p>
-
-        <h3>Portfolio Website</h3>
-        <p>Designed and deployed a personal portfolio website using HTML, CSS, JavaScript, GitHub, and GitHub Pages.</p>
-
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card"><h3>Azure Windows VM</h3><p>Deployed and configured Windows Server VM on Azure with RDP access</p></div>
+        <div class="card"><h3>Active Directory Lab</h3><p>Set up AD DS, Users, Groups and Group Policy</p></div>
+        <div class="card"><h3>Linux Web Server</h3><p>Hosted website using Nginx on Ubuntu Server</p></div>
+      </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-box">
+        <p><a href="mailto:somidetoluwalase2405@gmail.com">somidetoluwalase2405@gmail.com</a></p>
+        <p><a href="tel:+23409014688673">+234 09014688673</a></p>
+        <p><a href="https://github.com/somidetoluwalase2405" target="_blank">GitHub Profile</a></p>
+      </div>
+    </section>
+  </div>
 
-        <h2>Contact</h2>
+  <footer>
+    <p>© 2026 Somide Toluwalase | Designed for Azure Cloud</p>
+  </footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somide Toluwalase | Azure Cloud Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0; padding:0; box-sizing:border-box;}
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#0a192f;
+      color:#ccd6f6;
+    }
+    
+    /* NAV */
+    nav{
+      background:#0a192f;
+      padding:20px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:100;
+      border-bottom:1px solid #112240;
+    }
+    .logo{font-size:24px; font-weight:700; color:#64ffda;}
+    nav ul{display:flex; list-style:none; gap:30px;}
+    nav a{color:#ccd6f6; text-decoration:none; font-weight:500; transition:0.3s;}
+    nav a:hover{color:#64ffda;}
+    
+    /* HERO */
+    .hero{
+      background:linear-gradient(135deg, #0a192f 0%, #112240 100%);
+      text-align:center;
+      padding:120px 20px;
+    }
+    .hero h1{font-size:52px; color:#fff; margin-bottom:10px;}
+    .hero h2{font-size:24px; color:#64ffda; margin-bottom:20px; font-weight:400;}
+    .hero p{max-width:600px; margin:0 auto 30px; color:#8892b0;}
+    .btn{
+      background:#64ffda;
+      color:#0a192f;
+      padding:14px 30px;
+      border-radius:5px;
+      text-decoration:none;
+      font-weight:700;
+      transition:0.3s;
+    }
+    .btn:hover{background:#52e0c4;}
+    
+    /* SECTIONS */
+    .container{max-width:1100px; margin:0 auto; padding:80px 20px;}
+    section h2{
+      font-size:32px; 
+      color:#64ffda; 
+      text-align:center; 
+      margin-bottom:50px;
+    }
+    
+    /* CARDS */
+    .grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px;}
+    .card{
+      background:#112240;
+      padding:25px;
+      border-radius:10px;
+      border:1px solid #233554;
+      transition:0.3s;
+    }
+    .card:hover{transform:translateY(-5px); border-color:#64ffda;}
+    .card h3{color:#64ffda; margin-bottom:10px;}
+    
+    /* CONTACT */
+    .contact-box{text-align:center;}
+    .contact-box a{color:#64ffda; text-decoration:none; font-size:18px;}
+    .contact-box a:hover{text-decoration:underline;}
+    
+    footer{text-align:center; padding:40px; color:#8892b0; border-top:1px solid #112240;}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Somide</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-        <p>Email: your-email@example.com</p>
+  <section class="hero">
+    <h1>Somide Toluwalase</h1>
+    <h2>Junior Cloud Engineer | Azure Enthusiast</h2>
+    <p>Building scalable, secure cloud solutions with Microsoft Azure, Windows Server, and Linux</p>
+    <a href="#contact" class="btn">Get In Touch</a>
+  </section>
 
-        <p>GitHub: github.com/yourusername</p>
-
-        <p>LinkedIn: Coming Soon</p>
-
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p style="text-align:center; max-width:700px; margin:0 auto; line-height:1.8;">
+        Hi, I'm Somide Toluwalase, a Junior Cloud Engineer with a strong interest in Microsoft Azure, Windows Server, Linux, and IT infrastructure. 
+        I enjoy working on cloud projects and continuously improving my skills through hands-on learning.
+      </p>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="grid">
+        <div class="card"><h3>Microsoft Azure</h3><p>VMs, Storage, Networking, AD</p></div>
+        <div class="card"><h3>Windows Server</h3><p>Active Directory, DNS, DHCP</p></div>
+        <div class="card"><h3>Linux</h3><p>Ubuntu, Bash, Nginx, Apache</p></div>
+        <div class="card"><h3>DevOps Tools</h3><p>Git, GitHub, Docker, Azure CLI</p></div>
+      </div>
+    </section>
 
-        <p>&copy; 2026 Somide Toluwalase. All Rights Reserved.</p>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card"><h3>Azure Windows VM</h3><p>Deployed and configured Windows Server VM on Azure with RDP access</p></div>
+        <div class="card"><h3>Active Directory Lab</h3><p>Set up AD DS, Users, Groups and Group Policy</p></div>
+        <div class="card"><h3>Linux Web Server</h3><p>Hosted website using Nginx on Ubuntu Server</p></div>
+      </div>
+    </section>
 
-    </footer>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-box">
+        <p><a href="mailto:somidetoluwalase2405@gmail.com">somidetoluwalase2405@gmail.com</a></p>
+        <p><a href="tel:+23409014688673">+234 09014688673</a></p>
+        <p><a href="https://github.com/somidetoluwalase2405" target="_blank">GitHub Profile</a></p>
+      </div>
+    </section>
+  </div>
 
-    <script src="script.js"></script>
-
-</body>
-<h1>Hi, I'm Somide Toluwalase</h1>
-
-<h2>Aspiring Azure Cloud Engineer</h2>
-
-<p>
-I am passionate about Microsoft Azure, Windows Server,
-Linux, Active Directory and Cloud Computing.
-I enjoy building cloud solutions and continuously improving
-my IT skills.
-</p>
-
-<h2>Technical Skills</h2>
-
-<ul>
-<li>Microsoft Azure</li>
-<li>Azure CLI</li>
-<li>Windows Server</li>
-<li>Active Directory</li>
-<li>Linux</li>
-<li>Networking</li>
-<li>Git & GitHub</li>
-</ul>
-
-<h2>Projects</h2>
-
-<ul>
-<li>Azure Windows Virtual Machine</li>
-<li>Active Directory Domain Services</li>
-<li>Linux Web Server with Nginx</li>
-<li>Azure Blob Storage</li>
-</ul>
-<h2>Contacts</h2>
-   <p>Email: <a href="mailto:somidetoluwalase2405@gmail.com">somidetoluwalase2405@gmail.com@gmail.com</a></p>
-   <p>Phone: <a href="tel:+2348089842084">+234 09014688673</a></p>
-    <p>GitHub:
-<a href="https://github.com/yourusername" target="_blank">
-github.com/somidetoluwalase2405
-</a>
-</p>
-<footer>
-    <p>&copy; 2026 Somide Toluwalase. All Rights Reserved.</p>
-</footer>
-<script src="script.js"></script>
+  <footer>
+    <p>© 2026 Somide Toluwalase | Designed for Azure Cloud</p>
+  </footer>
 </body>
 </html>
