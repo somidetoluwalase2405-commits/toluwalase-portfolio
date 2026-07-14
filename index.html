@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Somide Toluwalase | Azure Cloud Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <nav>
@@ -14,57 +15,94 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <section class="hero">
+    <img src="https://via.placeholder.com/150" alt="Somide" class="profile-pic">
     <h1>Somide Toluwalase</h1>
     <h2>Junior Cloud Engineer | Azure Enthusiast</h2>
     <p>Building scalable, secure cloud solutions with Microsoft Azure, Windows Server, and Linux</p>
-    <a href="#contact" class="btn">Get In Touch</a>
+    <div class="hero-btns">
+      <a href="#contact" class="btn">Get In Touch</a>
+      <a href="#" class="btn btn-outline">Download Resume</a>
+    </div>
+    <div class="socials">
+      <a href="https://github.com/somidetoluwalase2405" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:somidetoluwalase2405@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
   </section>
 
   <div class="container">
     <section id="about">
       <h2>About Me</h2>
-      <p style="text-align:center; max-width:700px; margin:0 auto; line-height:1.8;">
-        Hi, I'm Somide Toluwalase, a Junior Cloud Engineer with a strong interest in Microsoft Azure, Windows Server, Linux, and IT infrastructure. 
-        I enjoy working on cloud projects and continuously improving my skills through hands-on learning.
-      </p>
+      <p>Hi, I'm Somide Toluwalase, a Junior Cloud Engineer with a strong interest in Microsoft Azure, Windows Server, Linux, and IT infrastructure. I enjoy working on hands-on cloud projects and continuously improving my skills through labs, certifications, and real-world problem solving. My goal is to help organizations migrate, secure, and optimize their infrastructure in the cloud.</p>
     </section>
 
     <section id="skills">
       <h2>Technical Skills</h2>
       <div class="grid">
-        <div class="card"><h3>Microsoft Azure</h3><p>VMs, Storage, Networking, AD</p></div>
-        <div class="card"><h3>Windows Server</h3><p>Active Directory, DNS, DHCP</p></div>
-        <div class="card"><h3>Linux</h3><p>Ubuntu, Bash, Nginx, Apache</p></div>
-        <div class="card"><h3>DevOps Tools</h3><p>Git, GitHub, Docker, Azure CLI</p></div>
+        <div class="card"><i class="fab fa-microsoft"></i><h3>Microsoft Azure</h3><p>VMs, VNet, Storage, AD, Blob, CLI, Portal</p></div>
+        <div class="card"><i class="fab fa-windows"></i><h3>Windows Server</h3><p>Active Directory, DNS, DHCP, Group Policy, PowerShell</p></div>
+        <div class="card"><i class="fab fa-linux"></i><h3>Linux</h3><p>Ubuntu, CentOS, Bash Scripting, Nginx, Apache, SSH</p></div>
+        <div class="card"><i class="fas fa-network-wired"></i><h3>Networking</h3><p>TCP/IP, Subnetting, Firewalls, VPN, DNS</p></div>
+        <div class="card"><i class="fab fa-git-alt"></i><h3>DevOps Tools</h3><p>Git, GitHub, Docker, Azure DevOps, CI/CD</p></div>
+        <div class="card"><i class="fas fa-shield-alt"></i><h3>Security</h3><p>Azure Security Center, IAM, MFA, Best Practices</p></div>
       </div>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Featured Projects</h2>
       <div class="grid">
-        <div class="card"><h3>Azure Windows VM</h3><p>Deployed and configured Windows Server VM on Azure with RDP access</p></div>
-        <div class="card"><h3>Active Directory Lab</h3><p>Set up AD DS, Users, Groups and Group Policy</p></div>
-        <div class="card"><h3>Linux Web Server</h3><p>Hosted website using Nginx on Ubuntu Server</p></div>
+        <div class="card">
+          <h3>Azure Windows VM Deployment</h3>
+          <p>Deployed and configured Windows Server 2022 VM on Azure. Configured RDP, NSG rules, and auto-shutdown for cost optimization.</p>
+          <a href="https://github.com/somidetoluwalase2405" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="card">
+          <h3>Active Directory Domain Lab</h3>
+          <p>Built a complete AD DS environment. Created Users, Groups, OUs, and applied Group Policies for password and security settings.</p>
+          <a href="https://github.com/somidetoluwalase2405" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="card">
+          <h3>Linux Web Server with Nginx</h3>
+          <p>Hosted a static website on Ubuntu Server using Nginx. Configured firewall, SSL, and domain name for public access.</p>
+          <a href="https://github.com/somidetoluwalase2405" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience & Learning</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Cloud Learning Path - Self Study</h3>
+          <span>2025 - Present</span>
+          <p>Hands-on labs with Microsoft Learn, Azure Fundamentals AZ-900. Building portfolio projects with Azure VM, Storage, and Networking.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>IT Infrastructure Projects</h3>
+          <span>2024 - Present</span>
+          <p>Practicing Windows Server, Linux Administration, and Active Directory in virtual lab environments.</p>
+        </div>
       </div>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
+      <h2>Get In Touch</h2>
       <div class="contact-box">
-        <p><a href="mailto:somidetoluwalase2405@gmail.com">somidetoluwalase2405@gmail.com</a></p>
-        <p><a href="tel:+23409014688673">+234 09014688673</a></p>
-        <p><a href="https://github.com/somidetoluwalase2405" target="_blank">GitHub Profile</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:somidetoluwalase2405@gmail.com">somidetoluwalase2405@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+23409014688673">+234 09014688673</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/somidetoluwalase2405" target="_blank">GitHub Profile</a></p>
       </div>
     </section>
   </div>
 
   <footer>
-    <p>© 2026 Somide Toluwalase | Designed for Azure Cloud</p>
+    <p>© 2026 Somide Toluwalase | Designed & Built with ❤️</p>
   </footer>
 </body>
 </html>
